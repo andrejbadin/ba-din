@@ -16,27 +16,27 @@ html {
 }
 
 body {
-  padding:1rem;  
+  padding: 1rem; 
   color: #444;
   background: #fefefe;
 }
 
 a {
-  color: #0645ad;
+  color: #000;
   text-decoration: none;
   font-weight: normal;
 }
 
 a:visited {
-  color: #0b0080;
+  color: #000;
 }
 
 a:hover {
-  color: #06e;
+  color: lightgrey;
 }
 
 a:active {
-  color: #faa700;
+  color: #000;
 }
 
 a:focus {
@@ -55,16 +55,17 @@ a:focus {
 
 a::-moz-selection {
   background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
+  color: #000;
 }
 
 a::selection {
   background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
+  color: #000;
 }
 
 p {
   margin:1rem auto;
+  text-align: left;
   line-height: 1.4;
   font-weight: normal;
   font-size: 20px;
@@ -81,6 +82,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   color: #111;
   font-weight: normal;
+  text-align: center;
   line-height: 1.4;
   margin-top: 2rem;
   max-width: 33rem;
@@ -98,19 +100,19 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 blockquote {
@@ -121,20 +123,23 @@ blockquote {
 }
 
 hr {
-  display: "▬";
-  height: 2px;
-  border: 0;
-  border-top: 6px solid #000;
-  margin: auto;
-  max-width: 1rem;
-  padding: 1rem;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: lightgrey;
+    padding-bottom: 0.9rem;
+    max-width: 33rem;
+  margin: 1rem auto;
 }
 
 pre, code, kbd, samp {
   color: #000;
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
-  font-size: 0.98rem;
+  margin: 1rem auto;
+  max-width: 21rem;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
 }
 
 pre {
